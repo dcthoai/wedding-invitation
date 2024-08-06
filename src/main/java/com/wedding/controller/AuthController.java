@@ -34,7 +34,7 @@ public class AuthController {
         return "Hello admin";
     }
 
-    @GetMapping(value = "/admin/hello")
+    @GetMapping(value = "/")
     public String adminHello() {
         return "admin v2";
     }

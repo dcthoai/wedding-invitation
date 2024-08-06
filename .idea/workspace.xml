@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="162dca20-bf41-46cc-9e67-3869b47e05e6" name="Changes" comment="" />
+    <list default="true" id="162dca20-bf41-46cc-9e67-3869b47e05e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/WeddingInvitationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/WeddingInvitationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/config/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/config/StaticResourceUrlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/StaticResourceUrlConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/dto/request/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dto/request/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/entity/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/entity/ResponseJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/ResponseJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/exception/AuthEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exception/AuthEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/exception/AuthExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exception/AuthExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wedding/service/FileUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/FileUploadService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +98,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Workspaces/Projects/wedding-invitation",
+    "last_opened_file_path": "D:/Workspaces/Projects/wedding-card",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,10 +110,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.WeddingInvitationApplication">
+    <configuration name="WeddingInvitationApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="wedding-card" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WeddingInvitationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WeddingInvitationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="wedding-invitation" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wedding.WeddingInvitationApplication" />
+      <module name="wedding-card" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WeddingInvitationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,6 +139,8 @@
       <workItem from="1722931528456" duration="879000" />
       <workItem from="1722932480548" duration="3528000" />
       <workItem from="1722936041720" duration="3272000" />
+      <workItem from="1722953753823" duration="659000" />
+      <workItem from="1722954516583" duration="371000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
-package com.wedding.config;
+package com.example.config;
 
-import com.wedding.exception.AuthEntryPoint;
+import com.example.exception.AuthEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

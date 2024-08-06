@@ -1,4 +1,4 @@
-package com.wedding.dto.request;
+package com.example.dto.request;
 
 public class UserRequestDTO {
     private String username, password;

@@ -1,7 +1,7 @@
-package com.wedding.controller;
+package com.example.controller;
 
-import com.wedding.dto.request.UserRequestDTO;
-import com.wedding.entity.ResponseJSON;
+import com.example.dto.request.UserRequestDTO;
+import com.example.entity.ResponseJSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

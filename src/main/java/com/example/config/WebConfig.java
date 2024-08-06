@@ -1,4 +1,4 @@
-package com.wedding.config;
+package com.example.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;

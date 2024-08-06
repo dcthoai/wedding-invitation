@@ -1,4 +1,4 @@
-package com.wedding.entity;
+package com.example.entity;
 
 import org.json.JSONObject;
 import org.springframework.http.HttpStatus;

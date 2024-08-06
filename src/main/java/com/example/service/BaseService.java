@@ -1,6 +1,6 @@
-package com.wedding.service;
+package com.example.service;
 
-import com.wedding.entity.BaseEntity;
+import com.example.entity.BaseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

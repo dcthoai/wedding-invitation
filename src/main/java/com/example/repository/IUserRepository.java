@@ -1,6 +1,6 @@
-package com.wedding.repository;
+package com.example.repository;
 
-import com.wedding.entity.CustomUserDetails;
+import com.example.entity.CustomUserDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

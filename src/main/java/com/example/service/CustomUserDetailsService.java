@@ -1,7 +1,7 @@
-package com.wedding.service;
+package com.example.service;
 
-import com.wedding.entity.CustomUserDetails;
-import com.wedding.repository.IUserRepository;
+import com.example.entity.CustomUserDetails;
+import com.example.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

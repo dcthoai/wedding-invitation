@@ -1,6 +1,6 @@
-package com.wedding.exception;
+package com.example.exception;
 
-import com.wedding.entity.ResponseJSON;
+import com.example.entity.ResponseJSON;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;

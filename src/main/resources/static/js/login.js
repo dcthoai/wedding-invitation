@@ -1,4 +1,6 @@
 function login(user){
+    openLoadingAnimation();
+
     fetch(BASE_URL + 'api/auth/login', {
         method: 'POST',
         headers: {
@@ -8,12 +10,15 @@ function login(user){
     })
     .then(response => response.json())
     .then(status => {
+        closeLoadingAnimation();
+
         if (status.success)
             window.location.href = BASE_URL + 'admin';
         else
             openPopupNotify('Đăng nhập thất bại: ', status.message, 'error');
     })
     .catch(error => {
+        closeLoadingAnimation();
         openPopupNotify('Đăng nhập thất bại!', error.message, 'error');
         console.log(error);
     })

@@ -150,3 +150,35 @@
         transform: translate(-50%, -105%);
     }
 }
+
+/* Loading animation */
+.loading {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    background-color: rgba(186, 186, 186, 0.5);
+}
+
+.loading .loading__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0.15rem solid #f52920;
+    border-top-color: transparent;
+    position: absolute;
+    top: calc(50% - 3rem);
+    left: calc(50% - 1.25rem);
+    animation: rotate linear 0.75s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}

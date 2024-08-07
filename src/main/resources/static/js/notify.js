@@ -2,7 +2,16 @@ const popupNotify = document.getElementById('notify');
 const popupTitle = document.getElementById('notify-title');
 const popupMessage = document.getElementById('notify-message');
 const popupNotifyCloseButton = document.getElementById('notify-close-button');
-var closeNotifyTimeOut;
+const loadingElement = document.querySelector('.loading');
+let closeNotifyTimeOut;
+
+function openLoadingAnimation() {
+    loadingElement.style.display = 'block';
+}
+
+function closeLoadingAnimation() {
+    loadingElement.style.display = 'none';
+}
 
 function openPopupNotify(title, message, status){
     popupNotify.style.animation = 'appearNotify 0.75s ease forwards';

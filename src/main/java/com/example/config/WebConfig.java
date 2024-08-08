@@ -17,6 +17,9 @@ public class WebConfig implements WebMvcConfigurer {
     @Value("${resources.uploads.path}")
     private String uploadPath;
 
+    @Value("${cors.domain}")
+    private String domainAllowCors;
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/uploads/**")
@@ -36,7 +39,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://wedding-card.up.railway.app/", "https://wedding-card.up.railway.app/admin")
+                .allowedOrigins(domainAllowCors)
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .exposedHeaders("Authorization")

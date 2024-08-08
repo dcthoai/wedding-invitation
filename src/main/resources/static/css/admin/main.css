@@ -68,8 +68,9 @@
     overflow-y: scroll;
 }
 
-.content .content-body .dashboard-content {
+.content .content-body .main-content {
     background: #fff;
+    margin-top: 70px;
 }
 
 input {
@@ -97,35 +98,4 @@ label {
 .wrapper-overflow-scroll-full {
     max-height: calc(100vh - 200px);
     overflow-y: scroll;
-}
-
-.content .dashboard-content #story-image-demo,
-.content .dashboard-content #carousel-image-demo {
-    max-width: 100%;
-    overflow-x: scroll;
-    display: flex;
-}
-
-.content .dashboard-content .story-image-wrapper,
-.content .dashboard-content .carousel-image-wrapper {
-    position: relative;
-    width: fit-content;
-}
-
-.content .dashboard-content .story-image-wrapper:not(:first-child),
-.content .dashboard-content .carousel-image-wrapper:not(:first-child) {
-    margin-left: 1rem;
-}
-
-.content .dashboard-content .story-image-wrapper i.fa-xmark,
-.content .dashboard-content .carousel-image-wrapper i.fa-xmark {
-    position: absolute;
-    top: -16px;
-    right: -16px;
-    font-size: 30px;
-    background: #fff;
-    padding: 3px 8px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #ccc;
 }

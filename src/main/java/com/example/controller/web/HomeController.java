@@ -27,7 +27,10 @@ public class HomeController {
             try {
                 String filePath = fileUploadService.saveFile(file);
 
-                return ResponseJSON.ok(filePath);
+                if (filePath != null)
+                    return ResponseJSON.ok("filePath: " + filePath);
+
+                return ResponseJSON.badRequest("filepath null: " + filePath);
             } catch (Exception e) {
                 e.printStackTrace();
                 return ResponseJSON.serverError(e.getMessage());

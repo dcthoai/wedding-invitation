@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+
 @Controller
 @RequestMapping(value = {"", "/"})
 public class HomeController {
@@ -25,6 +27,11 @@ public class HomeController {
     public ResponseEntity<?> upload(@RequestParam("file") MultipartFile file) {
         if (fileUploadService.isUploadFile(file)) {
             try {
+                File uploadsDir = new File("/usr/local/tomcat/webapps/uploads/");
+
+                if (!uploadsDir.exists())
+                    uploadsDir.mkdirs();
+
                 String filePath = fileUploadService.saveFile(file);
 
                 if (filePath != null)

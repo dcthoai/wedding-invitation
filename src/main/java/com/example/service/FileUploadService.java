@@ -14,13 +14,6 @@ public class FileUploadService {
     @Value("${resources.uploads.path}")
     private String uploadPath;
 
-    private FileUploadService() {
-        File uploadsDir = new File(uploadPath);
-
-        if (!uploadsDir.exists())
-            uploadsDir.mkdirs();
-    }
-
     public boolean isUploadFile(MultipartFile file) {
         return file != null && !file.isEmpty();
     }

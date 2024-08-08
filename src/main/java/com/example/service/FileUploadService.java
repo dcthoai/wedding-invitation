@@ -17,16 +17,10 @@ public class FileUploadService {
 
     public Boolean createDirectoryForUpload() throws NotDirectoryException {
         File newDirectory = new File(uploadPath);
+        // System.getProperty("user.dir");
 
-        if (!newDirectory.exists()) {
-            String currentWorkingDirectory = System.getProperty("user.dir") + "/uploads/";
-
-            if (currentWorkingDirectory.equals(uploadPath))
-                return newDirectory.mkdirs();
-            else
-                throw new NotDirectoryException("Invalid URL: the directory location you requested does not exist.");
-        }
-
+        if (!newDirectory.exists())
+            return newDirectory.mkdirs();
         return true;
     }
 

@@ -8,14 +8,10 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @RestController
@@ -29,20 +25,9 @@ public class AuthController {
         return new ModelAndView("login");
     }
 
-    @GetMapping(value = "/admin")
-    public String admin() {
-        return "Hello admin";
-    }
-
-    @GetMapping(value = "/")
-    public String adminHello() {
-        return "admin v2";
-    }
-
     @PostMapping(value = "/api/auth/login")
     public ResponseEntity<?> login(@RequestBody UserRequestDTO userRequest,
-                                   HttpServletRequest request,
-                                   HttpServletResponse response) {
+                                   HttpServletRequest request) {
         Authentication authentication = authenticationManager.authenticate(
             new UsernamePasswordAuthenticationToken(userRequest.getUsername(), userRequest.getPassword())
         );
@@ -58,7 +43,7 @@ public class AuthController {
     }
 
     @PostMapping(value = "/api/auth/logout")
-    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response) {
+    public ResponseEntity<?> logout(HttpServletRequest request) {
         try {
             HttpSession session = request.getSession(false);
 

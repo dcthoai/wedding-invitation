@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="162dca20-bf41-46cc-9e67-3869b47e05e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/admin/AdminHomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/notify.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/notify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/notify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/notify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Dockerfile" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -126,7 +127,9 @@
       <workItem from="1722936041720" duration="3272000" />
       <workItem from="1722953753823" duration="659000" />
       <workItem from="1722954516583" duration="740000" />
-      <workItem from="1723028141583" duration="1426000" />
+      <workItem from="1723028141583" duration="2216000" />
+      <workItem from="1723079927897" duration="5657000" />
+      <workItem from="1723088946717" duration="1233000" />
     </task>
     <servers />
   </component>

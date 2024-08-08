@@ -6,6 +6,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.NotDirectoryException;
 import java.util.UUID;
 
 @Service
@@ -13,6 +14,21 @@ public class FileUploadService {
 
     @Value("${resources.uploads.path}")
     private String uploadPath;
+
+    public Boolean createDirectoryForUpload() throws NotDirectoryException {
+        File newDirectory = new File(uploadPath);
+
+        if (!newDirectory.exists()) {
+            String currentWorkingDirectory = System.getProperty("user.dir") + "/uploads/";
+
+            if (currentWorkingDirectory.equals(uploadPath))
+                return newDirectory.mkdirs();
+            else
+                throw new NotDirectoryException("Invalid URL: the directory location you requested does not exist.");
+        }
+
+        return true;
+    }
 
     public boolean isUploadFile(MultipartFile file) {
         return file != null && !file.isEmpty();
@@ -27,10 +43,10 @@ public class FileUploadService {
         return UUID.randomUUID() + extension;
     }
 
-    public String saveFile(MultipartFile file) {
+    public String saveFile(MultipartFile file) throws IOException {
         // Check that the file from the client request is not empty
         if (isUploadFile(file) && file.getOriginalFilename() != null) {
-            try {
+            if (createDirectoryForUpload()) {
                 String fileName = generateUniqueFileName(file.getOriginalFilename());
                 String relativePath = "uploads" + File.separator + fileName;
                 String path = uploadPath + File.separator + fileName;
@@ -40,9 +56,6 @@ public class FileUploadService {
                 file.transferTo(newFile);
 
                 return relativePath;
-            } catch (IOException e) {
-                e.printStackTrace();
-                return null;
             }
         }
 

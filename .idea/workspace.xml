@@ -96,17 +96,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.WeddingInvitationApplication">
-    <configuration name="WeddingInvitationApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="WeddingCardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="wedding-card" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WeddingInvitationApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WeddingCardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeddingInvitationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="WeddingCardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="wedding-card" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WeddingInvitationApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WeddingCardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
